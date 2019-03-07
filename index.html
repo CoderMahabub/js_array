@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Javascript tutorial</title>
+        <link rel="stylesheet" type="text/css" href="main.css"
+    </head>
+    <body>
+        <section class="content">
+            <div class="header">
+                <h2><script> document.write("Tutorialal: JavaScript Basic Tutorials")</script></h2>
+            </div>
+
+            <div class="maincontent">
+                <div id="show">
+                    
+                </div>
+                <script>
+                    //How to call array and merge two arrays
+                    var arrOne = [1, 2, 3, 4, 5];
+                    var arrTwo = [1, 2, 3, 4, 5];
+                    var getArr = arrOne.concat(arrTwo);
+                    document.write(getArr +"<br/><br/>");
+
+                    
+                
+                    // How to sort different string array values.
+                    var color = ["green", "blue", "purple", "white", "megenda"];
+                    document.write("Befor sorting :" + color +"<br/>");
+                    color.sort();
+                    document.write("After sorting :" + color +"<br/><br/>");
+
+                
+                    // How to sort different number of array values In Accending order
+                    var num = [32,1,45,23,15,8,63];
+                    document.write("Before sorting the numbers: " + num + "<br/><br/>");
+                    function arraySort(x, y){
+                        return (x-y);
+                    }
+                    num.sort(arraySort);
+                    document.write("After sorting the numbers: " + num + "<br/><br/>");
+
+                    // How to sort different number of array values In Deccending order
+                    var num = [32,1,45,23,15,8,63];
+                    document.write("Before sorting the numbers: " + num + "<br/>");
+                    function arraySort(x, y){
+                        return (y-x);
+                    }
+                    num.sort(arraySort);
+                    document.write("After sorting the numbers: " + num + "<br/>");
+
+                    //how to find the length
+                    document.write(num.length);
+
+                    document.write("<br/><br/>");
+                    // To remove first value of array from list
+                    num.shift();
+                    document.write(num);
+
+                    document.write("<br/><br/>");
+                    // To add a array at last
+                    num.push(23);
+                    document.write(num);
+
+                    document.write("<br/><br/>");
+                    //To remove from last
+                    num.pop();
+                    document.write(num);
+
+                
+                </script>
+            </div>
+
+            <div class="footer">
+                    <h2> <script> document.write("This part is for footer section")</script></h2>
+                </div>
+        </section>
+    </body>
+</html>
